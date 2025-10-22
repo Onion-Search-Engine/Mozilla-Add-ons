@@ -1,0 +1,47 @@
+body {
+    width: 300px;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background-color: #f4f7f9;
+}
+
+.container {
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 8px 10px;
+    border: 1px solid #dce4ec;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #3498db;
+}
+
+#searchButton {
+    padding: 8px 15px;
+    border: 1px solid #3498db;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
