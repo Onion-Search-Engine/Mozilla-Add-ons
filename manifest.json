@@ -1,22 +1,19 @@
 {
-
   "manifest_version": 2,
-  "name": "Onion search engine",
-  "description": "It adds the Onion search engine to firefox without any popup. It is only compatible with Firefox 57 or greater. Search on onionsearchengine.com",
-  "version": "3.3",
-  "applications": {
-    "gecko": {
-      "strict_min_version": "57.0"
-    }
+  "name": "Onion Search Engine",
+  "version": "3.4",
+  "description": "Extension to search on Onion Search Engine directly from your toolbar.",
+  "author": "Onion Search Engine LLC",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
   },
-  "chrome_settings_overrides" : {
-  "search_provider": {
-    "name": "Onion search engine",
-    "search_url": "https://onionsearchengine.com/search.php?search={searchTerms}&submit=Search&rt=std&pk_campaign=firefox",
-    "keyword": "onion",
-    "favicon_url": "https://onionsearchengine.com/favicon.ico",
-    "is_default": true
-  }
-}
-
+  "browser_action": {
+    "default_icon": "icons/icon-48.png",
+    "default_title": "Search on Onion Search Engine",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
 }
